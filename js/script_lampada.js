@@ -6,12 +6,14 @@ const lamp = document.getElementById ('lamp');
 function lampOn () {
 	if (!isLampBroken () ){
 	lamp.src = './img/ligada.png';
+	turnOn.src =
 	}
 }
 
 function lampOff (){
 	if (!isLampBroken () ){
 	lamp.src = './img/desligada.png';
+	
 	}
 }
 
@@ -24,6 +26,8 @@ function isLampBroken (){
 	return lamp.src.indexOf ('quebrada') > -1;
 
 }
+
+
 
 turnOn.addEventListener ('click', lampOn);
 turnOff.addEventListener ('click', lampOff);
